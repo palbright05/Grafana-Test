@@ -37,8 +37,8 @@ tagConfig:
   condensed: false
 cells: 
 
-  S-->N:
-    tags: ['worker', 'db']
+  S-N:
+    #tags: ['worker', 'db']
     dataRef: "test-data-small-cos"
     label:
       separator: "colon"
@@ -46,18 +46,18 @@ cells:
     labelColor:
       thresholds: *thresholds-slow
     flowAnimation: *flowanim-slow
-    link: *grafana-home
+    #link: *grafana-home
 
-  N-->DC:
-    tags: ['worker', 'rate']
+  N-DC:
+    #tags: ['worker', 'rate']
     dataRef: "test-data-small-sin"
-    flowAnimation: *flowanim-slow
+    flowAnimation: *flowanim-fast
 
   Sensors:
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
-      units: "pps"
+      #units: "pps"
     labelColor:
       thresholds: *thresholds-slow
-    link: *grafana-home
+    #link: *grafana-home
