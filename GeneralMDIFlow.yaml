@@ -38,15 +38,15 @@ tagConfig:
 cells: 
 
   S-->N:
-    #tags: ['worker', 'db']
+    tags: ['worker', 'db']
     dataRef: "test-data-small-cos"
     label:
       separator: "colon"
       units: "ops"
     labelColor:
       thresholds: *thresholds-slow
-    flowAnimation: *flowanim-fast
-    #link: *grafana-home
+    flowAnimation: *flowanim-slow
+    link: *grafana-home
 
   N-->DC:
     tags: ['worker', 'rate']
@@ -57,7 +57,7 @@ cells:
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
-    # units: "pps
-   #labelColor:
-     # thresholds: *thresholds-slow
-    #link: *grafana-home
+      units: "pps"
+    labelColor:
+      thresholds: *thresholds-slow
+    link: *grafana-home
