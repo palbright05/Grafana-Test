@@ -45,8 +45,8 @@ cells:
       units: "ops"
     labelColor:
       thresholds: *thresholds-slow
-    flowAnimation: *flowanim-slow
-    link: *grafana-home
+    flowAnimation: *flowanim-fast
+    #link: *grafana-home
 
   N-->DC:
     tags: ['worker', 'rate']
@@ -57,7 +57,7 @@ cells:
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
-      #units: "pps
-    #labelColor:
+    # units: "pps
+   #labelColor:
      # thresholds: *thresholds-slow
     #link: *grafana-home
