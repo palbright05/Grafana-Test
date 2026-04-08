@@ -57,7 +57,7 @@ cells:
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
-      units: "pps"
-    labelColor:
-      thresholds: *thresholds-slow
-    link: *grafana-home
+      #units: "pps
+    #labelColor:
+     # thresholds: *thresholds-slow
+    #link: *grafana-home
