@@ -1,0 +1,310 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Test",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "efhwb55cjeqdce"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "worker"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": []
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 8,
+      "options": {
+        "animationControlEnabled": true,
+        "animationsEnabled": true,
+        "debuggingCtr": {
+          "colorsCtr": 0,
+          "dataCtr": 0,
+          "displaySvgCtr": 0,
+          "mappingsCtr": 0,
+          "timingsCtr": 0
+        },
+        "highlighterEnabled": true,
+        "highlighterSelection": "",
+        "panZoomEnabled": true,
+        "panelConfig": "https://raw.githubusercontent.com/andymchugh/andrewbmchugh-flow-panel/refs/heads/main/provisioning/dashboardData/flowAnim_bidirectionalData.yaml",
+        "siteConfig": "",
+        "svg": "https://raw.githubusercontent.com/andymchugh/andrewbmchugh-flow-panel/refs/heads/main/provisioning/dashboardData/flowAnim.svg",
+        "testDataEnabled": true,
+        "timeSliderEnabled": true,
+        "timeSliderMode": "local"
+      },
+      "pluginVersion": "1.20.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "efhwb55cjeqdce"
+          },
+          "refId": "A",
+          "scenarioId": "random_walk",
+          "seriesCount": 1
+        }
+      ],
+      "title": "New panel",
+      "type": "andrewbmchugh-flow-panel"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "efhlzjlamk7b4f"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 7,
+      "options": {
+        "animationControlEnabled": true,
+        "animationsEnabled": true,
+        "debuggingCtr": {
+          "colorsCtr": 0,
+          "dataCtr": 0,
+          "displaySvgCtr": 0,
+          "mappingsCtr": 0,
+          "timingsCtr": 0
+        },
+        "highlighterEnabled": true,
+        "highlighterSelection": "",
+        "panZoomEnabled": true,
+        "panelConfig": "https://raw.githubusercontent.com/andymchugh/andrewbmchugh-flow-panel/main/examples/panelConfig1.yaml",
+        "siteConfig": "",
+        "svg": "https://raw.githubusercontent.com/slb2991/Grafana-Test/refs/heads/main/General%20Health%20Diagram.drawio.svg",
+        "testDataEnabled": true,
+        "timeSliderEnabled": true,
+        "timeSliderMode": "local"
+      },
+      "pluginVersion": "1.20.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "efhlzjlamk7b4f"
+          },
+          "expr": "",
+          "instant": false,
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Example 2",
+      "type": "andrewbmchugh-flow-panel"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus-adm"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      },
+      "id": 6,
+      "options": {
+        "animationControlEnabled": true,
+        "animationsEnabled": true,
+        "debuggingCtr": {
+          "colorsCtr": 0,
+          "dataCtr": 0,
+          "displaySvgCtr": 0,
+          "mappingsCtr": 0,
+          "timingsCtr": 0
+        },
+        "highlighterEnabled": true,
+        "highlighterSelection": "",
+        "panZoomEnabled": true,
+        "panelConfig": "https://raw.githubusercontent.com/andymchugh/andrewbmchugh-flow-panel/main/examples/panelConfig2.yaml",
+        "siteConfig": "",
+        "svg": "https://raw.githubusercontent.com/andymchugh/andrewbmchugh-flow-panel/main/examples/ambiThemeSvg2.svg",
+        "testDataEnabled": true,
+        "timeSliderEnabled": true,
+        "timeSliderMode": "local"
+      },
+      "pluginVersion": "1.20.1",
+      "targets": [
+        {
+          "refId": "A"
+        }
+      ],
+      "title": "Example 1",
+      "type": "andrewbmchugh-flow-panel"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "efhwb55cjeqdce"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 24
+      },
+      "id": 5,
+      "options": {
+        "edges": {},
+        "layoutAlgorithm": "layered",
+        "nodes": {},
+        "zoomMode": "cooperative"
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "csvContent": "id,title,subtitle,mainstat,secondarystat,detail__Success,color,icon,noderadius,highlighted,Test value\nidsys1,sys1,Sensors,0.377,0.0678,1,red,search,40.0,false,8\nidcloud,cloud,Network,0.931,0.925,0.512,cyan,cloud,40.0,false,5\niddc1,dc1, Data Collector, 1,1,1,yellow,upload,40,false,3\nidpulsar,pulsar, Pulsar, 1,1,1,orange,database,40.0,false,3\nidre1,re1,Raw Extractor, 1,1,1,purple,file-export,40,false,3\niddb1,db1,Data Bridge, 1,1,1,grey,flip,40,false,3\nidpe1,pe1,Proceesed Extractor, 1,1,1,purple,file-export,40,false,3\nidrtp1,rtp1,Real Time Prep, 1,1,1,purple,sync,40,false,3\nidyamcs,yamcs,Yamcs, 1,1,1,orange,database,40,false,3\nidartemis,artemis,Artemis, 1,1,1,blue,presentation-play,40,false,3\nids3,s3, powerscale, 1,1,1,orange,database,40.0,false,3",
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "efhwb55cjeqdce"
+          },
+          "refId": "Nodes",
+          "scenarioId": "csv_content"
+        },
+        {
+          "csvContent": "id,source,target,mainstat,secondarystat,detail__message,highlighted,thickness,color,strokeDasharray\nsys1--cloud,idsys1,idcloud,MainStat1,SecStat1,message,false,4,white, 5 5\ncloud--dc1,idcloud,iddc1,MainStat2,SecStat2,message,false,4,white, 5 5\ndc1--pulsar,iddc1,idpulsar,MainStat2,SecStat2,message,false,4,white, 5 5\ndb1--pulsar,iddb1,idpulsar,MainStat2,SecStat2,message,false,4,white, 5 5\npulsar--re1,idpulsar,idre1,MainStat2,SecStat2,message,false,4,white, 5 5 \npulsar--pe1,idpulsar,idpe1,MainStat2,SecStat2,message,false,4,white, 5 5\npulsar--db1,idpulsar,iddb1,MainStat2,SecStat2,message,false,4,white, 5 5\npulsar--rtp1,idpulsar,idrtp1,MainStat2,SecStat2,message,false,4,white, 5 5\nre1--s3,idre1,ids3,MainStat2,SecStat2,message,false,4,white, 5 5\npe1--s3,idpe1,ids3,MainStat2,SecStat2,message,false,4,white, 5 5 \nrtp1--yamcs,idrtp1,idyamcs,MainStat2,SecStat2,message,false,4,white, 5 5\nyamcs--artemis,idyamcs,idartemis,MainStat2,SecStat2,message,false,4,white, 5 5",
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "efhwb55cjeqdce"
+          },
+          "refId": "Edges",
+          "scenarioId": "csv_content"
+        }
+      ],
+      "title": "General System Diagram",
+      "type": "nodeGraph"
+    },
+    {
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "efhwb55cjeqdce"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 32
+      },
+      "id": 2,
+      "options": {
+        "edges": {},
+        "layoutAlgorithm": "layered",
+        "nodes": {},
+        "zoomMode": "cooperative"
+      },
+      "pluginVersion": "12.3.0",
+      "targets": [
+        {
+          "csvContent": "id,title,subtitle,mainstat,secondarystat,detail__Success,color,icon,noderadius,highlighted,Test value\nidsys1,sys1,client,0.377,0.0678,1,blue,monitor,50.0,false,8\nidsys2,sys2,client,0.377,0.0678,1,blue,monitor,50.0,false,8\nidsys3,sys3,client,0.377,0.0678,1,blue,monitor,50.0,false,8\nidcloud,cloud,cloud,0.931,0.925,0.512,green,cloud,50.0,false,5\niddc1,dc1, Data Collector, 1,1,1,red,upload,50,false,3\niddc2,dc2, Data Collector, 1,1,1,red,upload,50,false,3\niddc3,dc3, Data Collector, 1,1,1,red,upload,50,false,3\nidpulsar,pulsar, pulsar, 1,1,1,orange,database,50.0,false,3\nidre1,re1,Raw Extractor, 1,1,1,purple,file-export,50,false,3\nidre2,re2,Raw Extractor, 1,1,1,purple,file-export,50,false,3\nidre3,re3,Raw Extractor, 1,1,1,purple,file-export,50,false,3\niddb1,db1,Data Bridge, 1,1,1,white,download-alt,50,false,3\niddb2,db2,Data Bridge, 1,1,1,white,download-alt,50,false,3\niddb3,db3,Data Bridge, 1,1,1,white,download-alt,50,false,3\nidpe1,pe1,Proceesed Extractor, 1,1,1,purple,file-export,50,false,3\nidpe2,pe2,Proceesed Extractor, 1,1,1,purple,file-export,50,false,3\nidpe3,pe3,Proceesed Extractor 3, 1,1,1,purple,file-export,50,false,3\nidrtp1,rtp1,Real Time Prep, 1,1,1,purple,capture,50,false,3\nidyamcs,yamcs,Yamcs, 1,1,1,orange,database,50,false,3\nids3,s3, powerscale, 1,1,1,brown,database,50.0,false,3",
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "efhwb55cjeqdce"
+          },
+          "refId": "Nodes",
+          "scenarioId": "csv_content"
+        },
+        {
+          "csvContent": "id,source,target,mainstat,secondarystat,detail__message,highlighted,thickness,color\nsys1--cloud:1,idsys1,idcloud,MainStat2,SecStat1,message,true,7,blue\nsys2--cloud:1,idsys2,idcloud,MainStat2,SecStat1,message,true,7,blue\nsys3--cloud:1,idsys3,idcloud,MainStat2,SecStat1,message,true,7,blue\ncloud--dc1,idcloud,iddc1,MainStat2,SecStat2,message,false,2,purple\ncloud--dc2,idcloud,iddc2,MainStat2,SecStat2,message,false,2,purple\ncloud--dc3,idcloud,iddc3,MainStat2,SecStat2,message,false,2,purple\ndc1--pulsar,iddc1,idpulsar,MainStat2,SecStat2,message,false,2,purple\ndc2--pulsar,iddc2,idpulsar,MainStat2,SecStat2,message,false,2,purple\ndc3--pulsar,iddc3,idpulsar,MainStat2,SecStat2,message,false,2,purple\ndb1--pulsar,iddb1,idpulsar,MainStat2,SecStat2,message,false,2,purple\ndb2--pulsar,iddb2,idpulsar,MainStat2,SecStat2,message,false,2,purple\ndb3--pulsar,iddb3,idpulsar,MainStat2,SecStat2,message,false,2,purple\npulsar--db1,idpulsar,iddb1,MainStat2,SecStat2,message,false,2,purple\npulsar--db2,idpulsar,iddb2,MainStat2,SecStat2,message,false,2,purple\npulsar--db3,idpulsar,iddb3,MainStat2,SecStat2,message,false,2,purple\npulsar--re1,idpulsar,idre1,MainStat2,SecStat2,message,false,2,purple\npulsar--re2,idpulsar,idre2,MainStat2,SecStat2,message,false,2,purple\npulsar--re3,idpulsar,idre3,MainStat2,SecStat2,message,false,2,purple\npulsar--pe1,idpulsar,idpe1,MainStat2,SecStat2,message,false,2,purple\npulsar--pe2,idpulsar,idpe2,MainStat2,SecStat2,message,false,2,purple\npulsar--pe3,idpulsar,idpe3,MainStat2,SecStat2,message,false,2,purple\npulsar--rtp1,idpulsar,idrtp1,MainStat2,SecStat2,message,false,2,purple\nre1--s3,idre1,ids3,MainStat2,SecStat2,message,false,2,purple\nre2--s3,idre2,ids3,MainStat2,SecStat2,message,false,2,purple\nre3--s3,idre3,ids3,MainStat2,SecStat2,message,false,2,purple\npe1--s3,idpe1,ids3,MainStat2,SecStat2,message,false,2,purple\npe2--s3,idpe2,ids3,MainStat2,SecStat2,message,false,2,purple\npe3--s3,idpe3,ids3,MainStat2,SecStat2,message,false,2,purple\nrtp1--yamcs,idrtp1,idyamcs,MainStat2,SecStat2,message,false,2,purple\n",
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "efhwb55cjeqdce"
+          },
+          "refId": "Edges",
+          "scenarioId": "csv_content"
+        }
+      ],
+      "title": "Node Graph",
+      "type": "nodeGraph"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 40
+      },
+      "id": 3,
+      "panels": [],
+      "title": "Row title",
+      "type": "row"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Sterling Test Dashboard ",
+  "uid": "adnbmhg",
+  "version": 22
+}
