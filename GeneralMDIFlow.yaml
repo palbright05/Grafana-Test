@@ -38,7 +38,7 @@ tagConfig:
 cells: 
 
   S-->N:
-    tags: ['worker', 'db']
+    #tags: ['worker', 'db']
     dataRef: "test-data-small-cos"
     label:
       separator: "colon"
