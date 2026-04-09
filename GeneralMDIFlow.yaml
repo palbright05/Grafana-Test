@@ -38,8 +38,8 @@ tagConfig:
 cells: 
 
   S-N:
-    tags: ['Records']
-    dataRef: "test-data-small-cos"
+    #tags: ['Records']
+    dataRef: "test-data-small-sin"
     label:
       separator: "colon"
       #units: "ops"
@@ -51,9 +51,10 @@ cells:
   N-DC:
     #tags: ['worker', 'rate']
     dataRef: "test-data-small-sin"
-    flowAnimation: *flowanim-fast
+    flowAnimation: *flowanim-slow
 
   Sensors:
+  tags: ['Sensors']
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
