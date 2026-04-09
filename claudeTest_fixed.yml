@@ -44,8 +44,8 @@ cells:
     labelColor:
       thresholds: *thresholds-sin
     flowAnimation:
-      thresholdOffValue: 10
-      thresholdLwrValue: 30
+      thresholdOffValue: 25
+      thresholdLwrValue: 80
       thresholdLwrDurationSecs: 2
-      thresholdUprValue: 80
-      thresholdUprDurationSecs: 0.2
+      thresholdUprValue: 180
+      thresholdUprDurationSecs: 0.1
