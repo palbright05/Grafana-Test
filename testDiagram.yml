@@ -15,7 +15,7 @@ anchorLinks:
 #------------------------------------------------------------------------------
 # Panel Config
 
-cellIdPreamble: "cell-"
+#cellIdPreamble: "cell-"
 gradientMode: "hue"
 tagConfig:
   condensed: false
