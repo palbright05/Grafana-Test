@@ -54,7 +54,7 @@ cells:
     flowAnimation: *flowanim-slow
 
   Sensors:
-  tags: ['Sensors']
+    tags: ['Sensors']
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
