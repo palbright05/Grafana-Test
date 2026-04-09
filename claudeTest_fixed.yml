@@ -22,8 +22,8 @@ cells:
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
-    labelColor:
-      thresholds: *thresholds-sin
+    #labelColor:
+      #thresholds: *thresholds-sin
     fillColor:
       thresholds: *thresholds-sin
 
@@ -31,8 +31,8 @@ cells:
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
-    labelColor:
-      thresholds: *thresholds-sin
+    #labelColor:
+      #thresholds: *thresholds-sin
     fillColor:
       thresholds: *thresholds-sin
 
