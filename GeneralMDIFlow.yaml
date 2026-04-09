@@ -41,6 +41,7 @@ cells:
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
+      decimals: 2
       units: "sec"
     labelColor:
       thresholds: *thresholds-slow
