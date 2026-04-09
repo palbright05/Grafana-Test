@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Compatible with grafana-flowcharting plugin -->
+<!-- Cells use id= (not data-cell-id=) for plugin compatibility -->
+<!-- LinePath has no nested child elements to avoid animation interference -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="401px" height="81px" viewBox="-0.5 -0.5 401 81">
+  <defs/>
+  <g>
+
+    <!-- SourceBox -->
+    <g id="SourceBox">
+      <rect x="0" y="0" width="80" height="80" fill="#fff2cc" stroke="#d6b656" pointer-events="all"/>
+      <text x="40" y="44" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">Source</text>
+    </g>
+
+    <!-- DestinationBox -->
+    <g id="DestinationBox">
+      <rect x="280" y="10" width="120" height="60" fill="#e1d5e7" stroke="#9673a6" pointer-events="all"/>
+      <text x="340" y="44" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">Destination</text>
+    </g>
+
+    <!-- LinePath - clean single path, no nested children -->
+    <g id="LinePath">
+      <path d="M 80 40 L 278 40" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+      <path d="M 278 40 L 269 44.5 L 271 40 L 269 35.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+    </g>
+
+  </g>
+</svg>
