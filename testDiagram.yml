@@ -20,6 +20,7 @@ gradientMode: "hue"
 tagConfig:
   condensed: false
 cells:
+
   SourceBox:
     dataRef: "test-data-small-sin"
     label:
