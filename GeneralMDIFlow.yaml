@@ -69,3 +69,5 @@ cells:
   S-N:
     dataRef: "test-data-small-cos"
     flowAnimation: *flowanim-slow
+    labelColor:
+      thresholds: *thresholds-slow
