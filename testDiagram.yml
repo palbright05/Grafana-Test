@@ -8,8 +8,9 @@ anchorLinks:
       url: "https://grafana.com/"
       params: "time"
   - thresholds: &thresholds-slow
-      - {color: "red", level: 0}
-      - {color: "green", level: 1}
+      - {color: "green", level: 0}
+      - {color: "orange", level: 200}
+      - {color: "red", level: 600}
 
 #------------------------------------------------------------------------------
 # Panel Config
