@@ -50,6 +50,8 @@ cells:
 
   inbox_workers:
     tags: ['worker', 'rate']
+    boxColor:
+      color: "red"
     dataRef: "test-data-small-sin"
     flowAnimation: *flowanim-slow
 
