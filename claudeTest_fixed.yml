@@ -1,0 +1,51 @@
+---
+
+#------------------------------------------------------------------------------
+# YAML Aliases
+
+anchorLinks:
+  - thresholds: &thresholds-sin
+      - { color: "green",  level: 0   }
+      - { color: "orange", level: 50  }
+      - { color: "red",    level: 100 }
+
+#------------------------------------------------------------------------------
+# Panel Config
+
+cellIdPreamble: ""
+gradientMode: "hue"
+tagConfig:
+  condensed: false
+cells:
+
+  SourceBox:
+    dataRef: "test-data-small-sin"
+    label:
+      separator: "colon"
+    labelColor:
+      thresholds: *thresholds-sin
+    fillColor:
+      thresholds: *thresholds-sin
+
+  DestinationBox:
+    dataRef: "test-data-small-sin"
+    label:
+      separator: "colon"
+    labelColor:
+      thresholds: *thresholds-sin
+    fillColor:
+      thresholds: *thresholds-sin
+
+  LinePath:
+    dataRef: "test-data-small-sin"
+    label:
+      separator: "colon"
+      units: "ops"
+    labelColor:
+      thresholds: *thresholds-sin
+    flowAnimation:
+      thresholdOffValue: 10
+      thresholdLwrValue: 30
+      thresholdLwrDurationSecs: 2
+      thresholdUprValue: 80
+      thresholdUprDurationSecs: 0.2
