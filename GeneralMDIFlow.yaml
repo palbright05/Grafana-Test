@@ -66,3 +66,6 @@ cells:
     labelColor:
       thresholds: *thresholds-fast
     #link: *grafana-home
+  S-N:
+    dataRef: "test-data-small-cos"
+    flowAnimation: *flowanim-slow
