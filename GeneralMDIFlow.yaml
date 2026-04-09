@@ -37,37 +37,21 @@ tagConfig:
   condensed: false
 cells: 
 
-  Sensors:
-    dataRef: "test-data-small-sin"
+  E-S3:
+    dataRef: "test-data-small-cos"
+    label:
+      separator: "colon"
+      units: "ops"
+    labelColor:
+      thresholds:
+        - { color: "green", level: 0 }
+        - { color: "orange", level: 50 }
+        - { color: "red", level: 100 }
     boxColor:
-      color: "red"
-    label:
-      separator: "colon"
-      #decimals: 2
-      #units: "sec"
-    labelColor:
-      thresholds: *thresholds-slow
-    #link: *grafana-home
-  P:
-    dataRef: "test-data-small-cos"
-    label:
-      separator: "colon"
-      #decimals: 2
-      #units: "ops"
-    labelColor:
-      thresholds: *thresholds-fast
-    #link: *grafana-home
-  Network:
-    dataRef: "test-data-small-cos"
-    label:
-      separator: "space"
-      #decimals: 2
-      #units: "ops"
-    labelColor:
-      thresholds: *thresholds-fast
-    #link: *grafana-home
-  S-N:
-    dataRef: "test-data-small-cos"
-    flowAnimation: *flowanim-slow
-    labelColor:
-      thresholds: *thresholds-slow
+      color: "lightblue"
+    flowAnimation:
+      thresholdOffValue: 20
+      thresholdLwrValue: 40
+      thresholdLwrDurationSecs: 1
+      thresholdUprValue: 100
+      thresholdUprDurationSecs: 0.1
