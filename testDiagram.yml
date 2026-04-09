@@ -7,7 +7,7 @@ tagConfig:
   condensed: false
 cells: 
 
-  E-S3:
+  LinePath:
     dataRef: "test-data-small-cos"
     label:
       separator: "colon"
