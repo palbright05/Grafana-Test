@@ -47,7 +47,7 @@ cells:
     #link: *grafana-home
 
     S-N:
-    #tags: ['Records']
+    tags: ['Records']
     dataRef: "test-data-small-cos"
     label:
       separator: "colon"
