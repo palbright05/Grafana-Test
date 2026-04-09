@@ -39,6 +39,8 @@ cells:
 
   Sensors:
     dataRef: "test-data-small-sin"
+    boxColor:
+      color: "red"
     label:
       separator: "colon"
       #decimals: 2
@@ -49,7 +51,7 @@ cells:
   P:
     dataRef: "test-data-small-cos"
     label:
-      separator: "equals"
+      separator: "colon"
       #decimals: 2
       #units: "ops"
     labelColor:
@@ -58,7 +60,7 @@ cells:
   Network:
     dataRef: "test-data-small-cos"
     label:
-      separator: "equals"
+      separator: "space"
       #decimals: 2
       #units: "ops"
     labelColor:
