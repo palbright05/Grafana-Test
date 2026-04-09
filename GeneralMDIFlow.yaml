@@ -46,13 +46,3 @@ cells:
       thresholds: *thresholds-slow
     #link: *grafana-home
 
-    S-N:
-    tags: ['Records']
-    dataRef: "test-data-small-cos"
-    label:
-      separator: "colon"
-      #units: "ops"
-    labelColor:
-      thresholds: *thresholds-slow
-    flowAnimation: *flowanim-slow
-
