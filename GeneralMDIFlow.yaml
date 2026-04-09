@@ -10,7 +10,7 @@ anchorLinks:
   - thresholds: &thresholds-slow
       - {color: "red", level: 0}
       - {color: "green", level: 1}
-      - {color: "red", level: 150}
+      #- {color: "red", level: 150}
   - thresholds: &thresholds-fast
       - {color: "green", level: 0}
       - {color: "orange", level: 200}
@@ -37,16 +37,6 @@ tagConfig:
   condensed: false
 cells: 
 
-  S-N:
-    tags: ['Records']
-    dataRef: "test-data-small-cos"
-    label:
-      separator: "colon"
-      #units: "ops"
-    labelColor:
-      thresholds: *thresholds-slow
-    flowAnimation: *flowanim-slow
-
   Sensors:
     dataRef: "test-data-small-sin"
     label:
@@ -55,3 +45,14 @@ cells:
     labelColor:
       thresholds: *thresholds-slow
     #link: *grafana-home
+
+    S-N:
+    #tags: ['Records']
+    dataRef: "test-data-small-cos"
+    label:
+      separator: "colon"
+      #units: "ops"
+    labelColor:
+      thresholds: *thresholds-slow
+    flowAnimation: *flowanim-slow
+
