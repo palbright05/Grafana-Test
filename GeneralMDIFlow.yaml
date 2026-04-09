@@ -55,3 +55,12 @@ cells:
     labelColor:
       thresholds: *thresholds-fast
     #link: *grafana-home
+  Network:
+    dataRef: "test-data-small-cos"
+    label:
+      separator: "equals"
+      #decimals: 2
+      #units: "ops"
+    labelColor:
+      thresholds: *thresholds-fast
+    #link: *grafana-home
