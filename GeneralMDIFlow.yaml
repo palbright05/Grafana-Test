@@ -8,9 +8,9 @@ anchorLinks:
       url: "https://grafana.com/"
       params: "time"
   - thresholds: &thresholds-slow
-      - {color: "green", level: 0}
-      - {color: "orange", level: 80}
-      - {color: "red", level: 150}
+      - {color: "red", level: 0}
+      - {color: "green", level: 1}
+      #- {color: "red", level: 150}
   - thresholds: &thresholds-fast
       - {color: "green", level: 0}
       - {color: "orange", level: 200}
@@ -38,11 +38,11 @@ tagConfig:
 cells: 
 
   S-N:
-    #tags: ['worker', 'db']
+    tags: ['Records']
     dataRef: "test-data-small-cos"
     label:
       separator: "colon"
-      units: "ops"
+      #units: "ops"
     labelColor:
       thresholds: *thresholds-slow
     flowAnimation: *flowanim-slow
