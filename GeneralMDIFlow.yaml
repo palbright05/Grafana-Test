@@ -10,7 +10,7 @@ anchorLinks:
   - thresholds: &thresholds-slow
       - {color: "red", level: 0}
       - {color: "green", level: 1}
-      #- {color: "red", level: 150}
+      - {color: "red", level: 150}
   - thresholds: &thresholds-fast
       - {color: "green", level: 0}
       - {color: "orange", level: 200}
@@ -38,19 +38,13 @@ tagConfig:
 cells: 
 
   S-N:
-    #tags: ['Records']
+    tags: ['Records']
     dataRef: "test-data-small-sin"
     label:
       separator: "colon"
       #units: "ops"
     labelColor:
       thresholds: *thresholds-slow
-    flowAnimation: *flowanim-slow
-    #link: *grafana-home
-
-  N-DC:
-    #tags: ['worker', 'rate']
-    dataRef: "test-data-small-sin"
     flowAnimation: *flowanim-slow
 
   Sensors:
